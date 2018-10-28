@@ -8,40 +8,16 @@
 
 import Foundation
 
-// vocabulary
-/*
- base class, encapsulation, inheritance, initialization, instantiation, properties, methods, object oriented programming
- object oriented programming - representing "objects" through properties and methods
- */
+// vocabulary: object oriented programming, base class, object, properties, methods, instantiation, initialization, accessing properties, instance methods, type methods
 
-// create an instance of the Car() struct
-// through use of property dot syntax update its values
-var nissan = Car() // nissan is an instance of Car()
-nissan.make = "Nissan"
-nissan.model = "Rogue"
-nissan.year = 2009
+// what is object oriented programming?
 
-// uses the default struct memberwise initializer
-// NB: only availble in structs, NOT classes
-var ford = Car(make: "Ford", model: "Mustang", year: 1999)
+// CLASSES
 
-// array of cars
-let cars = [nissan, ford]
+// let's model a class object
 
-// iterating through the cars array
-for car in cars {
-  print("car make is \(car.make)")
-}
+// STRUCTS
 
-// create Fellow() class instances
-let antonio = Fellow(name: "Antonio", stressLevel: 10, age: 19, cohort: 5.3)
-let diego = Fellow(name: "Diego", stressLevel: 9, age: 32, cohort: 5.3)
-let ashli = Fellow(name: "Ashli", stressLevel: 5, age: 20, cohort: 5.3)
+// let's model a struct object
 
-// create an array of fellows
-let fellows = [antonio, diego, ashli]
-
-// iterate through fellows
-for fellow in fellows {
-  print("Fellow\'s name is \(fellow.name)")
-}
+// DIFFERENCES
