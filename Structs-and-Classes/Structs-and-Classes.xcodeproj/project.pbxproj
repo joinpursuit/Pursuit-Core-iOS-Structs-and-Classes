@@ -11,6 +11,11 @@
 		57E662C22187597300DD1DD1 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C12187597300DD1DD1 /* Vehicle.swift */; };
 		57E662C421875A3A00DD1DD1 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C321875A3A00DD1DD1 /* VehicleType.swift */; };
 		57E662C62187687200DD1DD1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C52187687200DD1DD1 /* Car.swift */; };
+		57E662C82187924300DD1DD1 /* Fellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C72187924300DD1DD1 /* Fellow.swift */; };
+		57E662CA218792A000DD1DD1 /* StressLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C9218792A000DD1DD1 /* StressLevel.swift */; };
+		57E662CC218792FF00DD1DD1 /* Cohort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662CB218792FF00DD1DD1 /* Cohort.swift */; };
+		57E662CE2187933200DD1DD1 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662CD2187933200DD1DD1 /* Gender.swift */; };
+		57E662D22187963800DD1DD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662D12187963800DD1DD1 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +36,11 @@
 		57E662C12187597300DD1DD1 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		57E662C321875A3A00DD1DD1 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 		57E662C52187687200DD1DD1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		57E662C72187924300DD1DD1 /* Fellow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fellow.swift; sourceTree = "<group>"; };
+		57E662C9218792A000DD1DD1 /* StressLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevel.swift; sourceTree = "<group>"; };
+		57E662CB218792FF00DD1DD1 /* Cohort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cohort.swift; sourceTree = "<group>"; };
+		57E662CD2187933200DD1DD1 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		57E662D12187963800DD1DD1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +74,32 @@
 			isa = PBXGroup;
 			children = (
 				578755AB2183D2DC00A45A95 /* main.swift */,
-				57E662C12187597300DD1DD1 /* Vehicle.swift */,
-				57E662C52187687200DD1DD1 /* Car.swift */,
-				57E662C321875A3A00DD1DD1 /* VehicleType.swift */,
+				57E662D0218793C400DD1DD1 /* classes */,
+				57E662CF2187939100DD1DD1 /* enums */,
+				57E662C72187924300DD1DD1 /* Fellow.swift */,
+				57E662D12187963800DD1DD1 /* Person.swift */,
 			);
 			path = "Structs-and-Classes";
+			sourceTree = "<group>";
+		};
+		57E662CF2187939100DD1DD1 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				57E662C321875A3A00DD1DD1 /* VehicleType.swift */,
+				57E662C9218792A000DD1DD1 /* StressLevel.swift */,
+				57E662CB218792FF00DD1DD1 /* Cohort.swift */,
+				57E662CD2187933200DD1DD1 /* Gender.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		57E662D0218793C400DD1DD1 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				57E662C12187597300DD1DD1 /* Vehicle.swift */,
+				57E662C52187687200DD1DD1 /* Car.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E662C22187597300DD1DD1 /* Vehicle.swift in Sources */,
+				57E662C82187924300DD1DD1 /* Fellow.swift in Sources */,
 				578755AC2183D2DC00A45A95 /* main.swift in Sources */,
+				57E662CC218792FF00DD1DD1 /* Cohort.swift in Sources */,
+				57E662CE2187933200DD1DD1 /* Gender.swift in Sources */,
 				57E662C62187687200DD1DD1 /* Car.swift in Sources */,
+				57E662D22187963800DD1DD1 /* Person.swift in Sources */,
+				57E662CA218792A000DD1DD1 /* StressLevel.swift in Sources */,
 				57E662C421875A3A00DD1DD1 /* VehicleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
