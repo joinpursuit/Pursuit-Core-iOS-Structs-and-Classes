@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		578755AC2183D2DC00A45A95 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578755AB2183D2DC00A45A95 /* main.swift */; };
+		57E662C22187597300DD1DD1 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C12187597300DD1DD1 /* Vehicle.swift */; };
+		57E662C421875A3A00DD1DD1 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C321875A3A00DD1DD1 /* VehicleType.swift */; };
+		57E662C62187687200DD1DD1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E662C52187687200DD1DD1 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		578755A82183D2DC00A45A95 /* Structs-and-Classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Structs-and-Classes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578755AB2183D2DC00A45A95 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		57E662C12187597300DD1DD1 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		57E662C321875A3A00DD1DD1 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
+		57E662C52187687200DD1DD1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				578755AB2183D2DC00A45A95 /* main.swift */,
+				57E662C12187597300DD1DD1 /* Vehicle.swift */,
+				57E662C52187687200DD1DD1 /* Car.swift */,
+				57E662C321875A3A00DD1DD1 /* VehicleType.swift */,
 			);
 			path = "Structs-and-Classes";
 			sourceTree = "<group>";
@@ -119,7 +128,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E662C22187597300DD1DD1 /* Vehicle.swift in Sources */,
 				578755AC2183D2DC00A45A95 /* main.swift in Sources */,
+				57E662C62187687200DD1DD1 /* Car.swift in Sources */,
+				57E662C421875A3A00DD1DD1 /* VehicleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
