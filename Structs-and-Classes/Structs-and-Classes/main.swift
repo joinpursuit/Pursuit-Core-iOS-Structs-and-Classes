@@ -61,25 +61,25 @@ nissan.getVehicleInfo()
 
 // create a Fellow() instance
 // Fellow is using the memberwise initializer
-let eli = Fellow.init(stressLevel: .high, cohort: .iOS, gender: .female, name: "Elizabeth", car: nil, email: "elizabeth@pursuit.org", isLegalToDrink: true)
+var eli = Fellow.init(stressLevel: .high, cohort: .iOS, gender: .female, firstName: "Elizabeth", lastName: "Peraza", car: nil, email: "elizabeth@pursuit.org", isLegalToDrink: true, isEmployed: false)
 
 // access the getFellowInfo() instance method 
 eli.getFellowInfo()
 
 var nathalie = eli
-nathalie.name = "Nathalie"
+nathalie.firstName = "Nathalie"
 
 eli.getFellowInfo()
 
 nathalie.getFellowInfo()
 
-let antonio = Fellow.init(stressLevel: .low, cohort: .iOS, gender: .male, name: "Antonio", car: nissan, email: "antonio@aol.com", isLegalToDrink: true)
+var antonio = Fellow.init(stressLevel: .low, cohort: .iOS, gender: .male, firstName: "Antonio", lastName: "Flowers", car: nissan, email: "antonio@aol.com", isLegalToDrink: true, isEmployed: false)
 
 // an array of Fellow() 's
 let fellows = [eli, nathalie, antonio]
 for fellow in fellows {
   if let _ = fellow.car {
-    print("\(fellow.name), can I get a ride to Pursuit tomorrow?")
+    print("\(fellow.firstName), can I get a ride to Pursuit tomorrow?")
   }
 }
 
@@ -87,6 +87,31 @@ for fellow in fellows {
 let femaleFellows = fellows.filter { $0.gender == .female }
 print("there will be \(femaleFellows.count) women fellows at the conference")
 
+// PROPERTIES
+
+// stored properties
+
+// lazy var - only gets called when need, used for time efficieny on complex operations
+
+// using fullName computed property
+// accessing a property which is a get (read) - only property
+print(antonio.fullName)
+
+// access Fellows email
+print("\(antonio.fullName) email is \(antonio.email)")
+
+//antonio.fullName = "Roger Rabbit"
+
+// property obeservers - willSet, didSet
+eli.isEmployed = true
+
+// type properties - call property using the type, e.g Fellow.currentYear
+print(Fellow.currentYear)
+
+// mutating functions
+print("\(antonio.firstName) last name is \(antonio.lastName)")
+antonio.updateLastName()
+print("\(antonio.firstName) last name is \(antonio.lastName)")
 
 // DIFFERENCES
 /*
